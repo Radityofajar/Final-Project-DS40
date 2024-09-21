@@ -1,0 +1,9 @@
+Model,Duration,Best Params,MSE,RMSE,MAE,R2
+RandomForest,Duration: 0:02:22.684431,"Best Params: {'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 10, 'n_estimators': 200}",MSE: 414.6232,RMSE: 20.3623,MAE: 16.2237,R2: 0.0283
+XGBoost,Duration: 0:01:17.654605,"Best Params: {'colsample_bytree': 0.6, 'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 500, 'subsample': 0.6}",MSE: 412.1816,RMSE: 20.3023,MAE: 16.1742,R2: 0.0341
+LinearRegression,Duration: 0:00:00.068517,Best Params: Default parameters,MSE: 414.8280,RMSE: 20.3673,MAE: 16.1819,R2: 0.0281
+RandomForest,Duration: 0:02:21.472530,"Best Params: {'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 10, 'n_estimators': 200}",MSE: 414.6232,RMSE: 20.3623,MAE: 16.2237,R2: 0.0283
+XGBoost,Duration: 0:01:07.605480,"Best Params: {'colsample_bytree': 0.6, 'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 500, 'subsample': 0.6}",MSE: 412.1816,RMSE: 20.3023,MAE: 16.1742,R2: 0.0341
+LinearRegression,Duration: 0:00:00.007958,Best Params: Default parameters,MSE: 414.8280,RMSE: 20.3673,MAE: 16.1819,R2: 0.0281
+GradientBoostingRegressor,Duration: 0:20:48.897414,"Best Params: {'learning_rate': 0.01, 'max_depth': 3, 'min_samples_leaf': 2, 'min_samples_split': 10, 'n_estimators': 500, 'subsample': 0.6}",MSE: 412.9254,RMSE: 20.3206,MAE: 16.1882,R2: 0.0324
+AdaBoostRegressor,Duration: 0:00:41.280071,"Best Params: {'learning_rate': 0.01, 'loss': 'exponential', 'n_estimators': 100}",MSE: 415.7361,RMSE: 20.3896,MAE: 16.2984,R2: 0.0259
