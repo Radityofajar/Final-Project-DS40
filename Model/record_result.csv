@@ -9,3 +9,7 @@ GradientBoostingRegressor,Duration: 0:20:48.897414,"Best Params: {'learning_rate
 AdaBoostRegressor,Duration: 0:00:41.280071,"Best Params: {'learning_rate': 0.01, 'loss': 'exponential', 'n_estimators': 100}",MSE: 415.7361,RMSE: 20.3896,MAE: 16.2984,R2: 0.0259
 RandomForest,0:05:54.552849,"{'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 4, 'min_samples_split': 2, 'n_estimators': 200}",412.9549,20.3213,16.1730,0.0323
 LGBMRegressor,0:00:58.280736,"{'colsample_bytree': 1.0, 'learning_rate': 0.01, 'min_child_samples': 20, 'n_estimators': 100, 'num_leaves': 50, 'subsample': 0.6, 'verbose': -1}",415.2980,20.3789,16.2556,0.0270
+LGBMRegressor,0:03:00.389950,"{'colsample_bytree': 0.6, 'learning_rate': 0.01, 'min_child_samples': 20, 'n_estimators': 200, 'num_leaves': 31, 'subsample': 0.6, 'verbose': -1}",414.2815,20.3539,16.2207,0.0293
+RandomForest,0:01:29.231288,"{'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}",413.2246,20.3279,16.1809,0.0316
+XGBoost,0:04:44.518335,"{'colsample_bytree': 1.0, 'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.6}",412.3543,20.3065,16.1776,0.0337
+LinearRegression,0:00:00.010197,Default parameters,414.8280,20.3673,16.1819,0.0281
