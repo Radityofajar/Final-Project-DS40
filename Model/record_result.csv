@@ -13,3 +13,5 @@ LGBMRegressor,0:03:00.389950,"{'colsample_bytree': 0.6, 'learning_rate': 0.01, '
 RandomForest,0:01:29.231288,"{'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 4, 'min_samples_split': 10, 'n_estimators': 100}",413.2246,20.3279,16.1809,0.0316
 XGBoost,0:04:44.518335,"{'colsample_bytree': 1.0, 'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.6}",412.3543,20.3065,16.1776,0.0337
 LinearRegression,0:00:00.010197,Default parameters,414.8280,20.3673,16.1819,0.0281
+GradientBoostingRegressor,1:00:54.314418,"{'learning_rate': 0.01, 'max_depth': 3, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 500, 'subsample': 0.6}",412.5887,20.3123,16.1784,0.0332
+AdaBoostRegressor,0:04:08.553375,"{'learning_rate': 0.01, 'loss': 'exponential', 'n_estimators': 100}",415.7361,20.3896,16.2984,0.0259
