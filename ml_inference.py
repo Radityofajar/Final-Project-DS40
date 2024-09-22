@@ -6,9 +6,7 @@ import os
 import warnings
 warnings.filterwarnings('ignore')
 
-import asyncio
-
-async def scaling(input):
+def scaling(input):
     directory = 'CleanDataset/scaler.pkl'
     scaler = pkl.load(open(directory, 'rb'))
     input = np.reshape(input, (1, 13))
@@ -19,12 +17,12 @@ def load_model(model):
     loaded_model = pkl.load(open(f'Model/{model}.pkl', 'rb'))
     return loaded_model
 
-async def exec_pred(model, data):
+def exec_pred(model, data):
     prediction = np.round(model.predict(data), 0)
     return prediction
 
 
-async def run_ml():
+def run_ml():
     st.subheader('Song Popularity Prediction')
 
     st.subheader('Input Your Data')
@@ -72,12 +70,12 @@ async def run_ml():
     for i in result.values():
         UserInput.append(i)
     
-    dataScaled = await scaling(UserInput)
+    dataScaled = scaling(UserInput)
     st.write(dataScaled)
 
     st.subheader("Prediction Result")
 
     model = load_model(Model)
-    prediction = await exec_pred(model, dataScaled)
+    prediction = exec_pred(model, dataScaled)
     st.write(prediction)
     

@@ -1,6 +1,4 @@
 import streamlit as st
-import streamlit.components as stc
-import asyncio
 from ml_inference import run_ml
 from homepage import Home
 import warnings
@@ -11,9 +9,9 @@ async def main():
     choice = st.sidebar.selectbox('Menu', menu)
 
     if choice == 'Home':
-        await Home()
+        Home()
     elif choice == 'Discovrio Final Project':
-        await run_ml()
+        run_ml()
 
 if __name__ == '__main__':
     asyncio.run(main())
