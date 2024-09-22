@@ -2,7 +2,9 @@ import streamlit as st
 
 import os
 
-def Home():
+import asyncio
+
+async def Home():
     st.title('Welcome to Discovrio Final Project APP')
 
     st.header("Meet Our Team")

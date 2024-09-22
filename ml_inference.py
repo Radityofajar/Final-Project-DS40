@@ -4,9 +4,11 @@ import numpy as np
 import pickle as pkl
 import os
 import warnings
-warnings.filterwarnings('ignore')
+warnings.warn('ignore')
 
-def scaling(input):
+import asyncio
+
+async def scaling(input):
     directory = 'CleanDataset/scaler.pkl'
     scaler = pkl.load(open(directory, 'rb'))
     input = np.reshape(input, (1, 13))
@@ -17,12 +19,12 @@ def load_model(model):
     loaded_model = pkl.load(open(f'Model/{model}.pkl', 'rb'))
     return loaded_model
 
-def exec_pred(model, data):
+async def exec_pred(model, data):
     prediction = np.round(model.predict(data), 0)
     return prediction
 
 
-def run_ml():
+async def run_ml():
     st.subheader('Song Popularity Prediction')
 
     st.subheader('Input Your Data')
@@ -70,12 +72,12 @@ def run_ml():
     for i in result.values():
         UserInput.append(i)
     
-    dataScaled = scaling(UserInput)
+    dataScaled = await scaling(UserInput)
     st.write(dataScaled)
 
     st.subheader("Prediction Result")
 
     model = load_model(Model)
-    prediction = exec_pred(model, dataScaled)
+    prediction = await exec_pred(model, dataScaled)
     st.write(prediction)
     
