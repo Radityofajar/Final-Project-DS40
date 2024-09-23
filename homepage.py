@@ -16,7 +16,7 @@ async def Home():
         "Puteri Sakinah Mantikasari A.G": "Teams/dummy.jpg",
         "Scudetto Ciano Syam": "Teams/dummy.jpg",
         "Rima Fitrianti Azahra": "Teams/dummy.jpg",
-        "Farhad Salim Sungkar": "Teams/dummy.jpg",
+        "[Farhad Salim Sungkar](https://www.linkedin.com/in/farhad-salim-sungkar-834126292/)": "Teams/farhad.jpg",
         "Yayes Kasnanda Bintang": "Teams/dummy.jpg",
     }
 
