@@ -11,7 +11,7 @@ async def Home():
     st.header("Meet Our Team!")
 
     team_members = {
-        "[Radityo Fajar Pamungkas](https://www.linkedin.com/in/radityo-fajar-pamungkas/)": "Teams/radityo.jpg",
+        "[Radityo Fajar](https://www.linkedin.com/in/radityo-fajar-pamungkas/)": "Teams/radityo.jpg",
         "Nugroho Wahyu Saputre": "Teams/dummy.jpg",
         "Puteri Sakinah Mantikasari A.G": "Teams/dummy.jpg",
         "Scudetto Ciano Syam": "Teams/dummy.jpg",
