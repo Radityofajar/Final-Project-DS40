@@ -37,7 +37,7 @@ async def Home():
                     st.write(name)
   
     st.header('Song Popularity Dataset: Attributes')
-        
+    st.write("Check the dataset here: [dataset link](https://www.kaggle.com/datasets/yasserh/song-popularity-dataset)")
     attributes = {
         "acousticness": (
             "A confidence measure from 0.0 to 1.0 of whether the track is acoustic. "
@@ -64,8 +64,8 @@ async def Home():
             "instrumental tracks, but confidence is higher as the value approaches 1.0."
         ),
         "key": (
-            "The key the track is in. Integers map to pitches using standard Pitch Class notation. "
-            "E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on. If no key was detected, the value is -1."
+            "The key the track is in. Integers map to pitches using standard [Pitch Class](https://en.wikipedia.org/wiki/Pitch_class) notation. "
+            "E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on. If no key was detected, the value is -1. "
         ),
         "liveness": (
             "Detects the presence of an audience in the recording. Higher liveness values represent an "
