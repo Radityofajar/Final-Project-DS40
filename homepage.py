@@ -11,7 +11,7 @@ async def Home():
     st.header("Meet Our Team!")
 
     team_members = {
-        "Radityo Fajar Pamungkas": "Teams/radityo.jpg",
+        "[Radityo Fajar Pamungkas](https://www.linkedin.com/in/radityo-fajar-pamungkas/)": "Teams/radityo.jpg",
         "Nugroho Wahyu Saputre": "Teams/dummy.jpg",
         "Puteri Sakinah Mantikasari A.G": "Teams/dummy.jpg",
         "Scudetto Ciano Syam": "Teams/dummy.jpg",
@@ -33,7 +33,8 @@ async def Home():
                 name = list(team_members.keys())[index]
                 image_path = team_members[name]
                 with cols_list[j]:
-                    st.image(image_path, caption=name, use_column_width=True)
+                    st.image(image_path, use_column_width=True)
+                    st.write(name)
   
     st.header('Song Popularity Dataset: Attributes')
         
