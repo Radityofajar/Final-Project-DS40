@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+import tensorflow as tf
 
 import pickle as pkl
 import os
@@ -16,7 +17,10 @@ async def scaling(input):
     return dataScaled
 
 def load_model(model):
-    loaded_model = pkl.load(open(f'Model/{model}.pkl', 'rb'))
+    if model == 'ANN':
+        loaded_model = tf.keras.models.load_model(f'Model/{model}_regressor.keras')
+    else:
+        loaded_model = pkl.load(open(f'Model/{model}.pkl', 'rb'))
     return loaded_model
 
 async def exec_pred(model, data):
@@ -34,7 +38,8 @@ async def run_ml():
                           'LGBMRegressor',
                           'LinearRegression',
                           'RandomForest',
-                          'XGBoost'])
+                          'XGBoost',
+                          'ANN'])
     Duration = st.number_input("Song Duration (ms)", 90000, 335000)
     Acoustic =st.number_input('Acousticness', 0.0, 1.0)
     Dance = st.number_input('Danceability', 0.0, 1.0)
