@@ -6,8 +6,9 @@ import asyncio
 
 async def Home():
     st.title('Welcome to Discovrio Final Project APP')
+    st.write('Check This Out: [Github Repository](https://github.com/Radityofajar/Final-Project-DS40)')
 
-    st.header("Meet Our Team")
+    st.header("Meet Our Team!")
 
     team_members = {
         "Radityo Fajar Pamungkas": "Teams/radityo.jpg",
@@ -21,8 +22,8 @@ async def Home():
 
     # Create a grid for team members
     num_members = len(team_members)
-    cols = 4  # Number of columns per row
-    rows = 2  # Calculate number of rows needed
+    cols = 4  # Number of columns
+    rows = 2  # number of rows needed
 
     for i in range(rows):
         cols_list = st.columns(cols)  # Create columns for this row
@@ -34,7 +35,7 @@ async def Home():
                 with cols_list[j]:
                     st.image(image_path, caption=name, use_column_width=True)
   
-    st.subheader('Song Popularity Dataset')
+    st.header('Song Popularity Dataset: Attributes')
         
     attributes = {
         "acousticness": (
