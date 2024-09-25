@@ -84,5 +84,10 @@ async def run_ml():
 
     model = load_model(Model)
     prediction = await exec_pred(model, dataScaled)
+    if prediction < 0:
+        prediction = 0
+    elif prediction > 100:
+        prediction = 100
+    
     st.write(prediction)
     
