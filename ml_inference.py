@@ -33,11 +33,11 @@ async def run_ml():
 
     st.subheader('Input Your Data')
     Model = st.selectbox('ML Model', 
-                         ['AdaBoostRegressor',
-                          'GradientBoostingRegressor',
-                          'LGBMRegressor',
-                          'LinearRegression',
-                          'RandomForest',
+                         ['AdaBoost Regressor',
+                          'Gradient Boosting Regressor',
+                          'Light GBM Regressor',
+                          'Linear Regression',
+                          'Random Forest',
                           'XGBoost',
                           'ANN'])
     Duration = st.number_input("Song Duration (ms)", 90000, 335000)
