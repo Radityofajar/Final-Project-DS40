@@ -4,9 +4,12 @@ import os
 
 import asyncio
 
+
 async def Home():
-    st.title('Welcome to Discovrio Final Project APP')
-    st.write('Check This Out: [Github Repository](https://github.com/Radityofajar/Final-Project-DS40)')
+    st.title("Welcome to Discovrio Final Project APP")
+    st.write(
+        "Check This Out: [Github Repository](https://github.com/Radityofajar/Final-Project-DS40)"
+    )
 
     st.header("Meet Our Team!")
 
@@ -17,7 +20,7 @@ async def Home():
         "Scudetto Ciano Syam": "Teams/dummy.jpg",
         "Rima Fitrianti Azahra": "Teams/dummy.jpg",
         "[Farhad Salim Sungkar](https://www.linkedin.com/in/farhad-salim-sungkar-834126292/)": "Teams/farhad.jpg",
-        "Yayes Kasnanda Bintang": "Teams/dummy.jpg",
+        "[Yayes Kasnanda Bintang](https://www.linkedin.com/in/ykbintang/)": "Teams/bintang.png",
     }
 
     # Create a grid for team members
@@ -35,9 +38,11 @@ async def Home():
                 with cols_list[j]:
                     st.image(image_path, use_column_width=True)
                     st.write(name)
-  
-    st.header('Song Popularity Dataset: Attributes')
-    st.write("Check the dataset here: [dataset link](https://www.kaggle.com/datasets/yasserh/song-popularity-dataset)")
+
+    st.header("Song Popularity Dataset: Attributes")
+    st.write(
+        "Check the dataset here: [dataset link](https://www.kaggle.com/datasets/yasserh/song-popularity-dataset)"
+    )
     attributes = {
         "acousticness": (
             "A confidence measure from 0.0 to 1.0 of whether the track is acoustic. "
@@ -48,9 +53,7 @@ async def Home():
             "musical elements including tempo, rhythm stability, beat strength, and overall regularity. "
             "A value of 0.0 is least danceable and 1.0 is most danceable."
         ),
-        "duration_ms": (
-            "The duration of the track in milliseconds."
-        ),
+        "duration_ms": ("The duration of the track in milliseconds."),
         "energy": (
             "Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. "
             "Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, "
